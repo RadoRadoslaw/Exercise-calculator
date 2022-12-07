@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'VT323', monospace;
 }
 * {
   box-sizing: border-box;
@@ -17,19 +17,20 @@ body {
     var(--primary),
     var(--secondary)
   );
-
   display: felex;
   justify-content: center;
   align-items: flex-start;
   padding: 5rem;
 }
 .dropdown {
+  position: absolute;
+  display: flex;
+  justify-content: center;
   width: 38rem;
-  position: relative;
 }
-.dropdown:hover .dropdown-list{
-    opacity: 1;
-    visibility: visible;
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
 }
 .dropdown-select {
   padding: 2.5rem;
@@ -46,14 +47,47 @@ body {
   border-radius: 4px;
   background-color: white;
   position: absolute;
-  top: 110%;
+  top: 120%;
+  font-size: 1.6rem;
   left: 0;
   right: 0;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s linear, visibility 0.2s linear;
 }
-.ćwiczenie {
+.ćwiczenie1 {
   padding: 1rem;
   font-size: 1.4rem;
+  cursor: pointer;
+}
+.ćwiczenie2 {
+  padding: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.ćwiczenie3 {
+  padding: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+
+.kalku {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 38rem;
+  right: -680px;
+  border-radius: 4px;
+  background-color: white;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+ 
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+.kalku :target {
+  opacity: 1;
+  visibility: visible;
 }
