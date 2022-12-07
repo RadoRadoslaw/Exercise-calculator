@@ -77,6 +77,15 @@ body {
   display: flex;
   justify-content: center;
   width: 38rem;
+
+ 
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+/* .kalku :target {
+  opacity: 1;
+  visibility: visible;
+} */
+.kalku-licznik{
   right: -680px;
   border-radius: 4px;
   background-color: white;
@@ -84,10 +93,4 @@ body {
   right: 0;
   opacity: 0;
   visibility: hidden;
- 
-  transition: opacity 0.2s linear, visibility 0.2s linear;
-}
-.kalku :target {
-  opacity: 1;
-  visibility: visible;
 }
