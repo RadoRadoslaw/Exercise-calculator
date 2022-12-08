@@ -28,9 +28,9 @@ body {
 
 .dropdown {
   position: relative;
-  display: flex;
+  display: inline-block;
   justify-content: center;
-  width: 38rem;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -61,10 +61,17 @@ body {
 
   font-size: 1.6rem;
   visibility: hidden;
+  opacity: 0;
   transition: 0.2s;
 }
+
+.active{
+  visibility: visible;
+  opacity: 1;
+}
+
 .kalku {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   /* visibility: hidden; */
  
@@ -74,10 +81,7 @@ body {
   transition: 0.2s;
 }
 
-/* .kalku :target {
-  opacity: 1;
-  visibility: visible;
-} */
+
 .kalku-licznik {
   right: -180px;
   border-radius: 4px;
@@ -85,8 +89,8 @@ body {
   left: 0;
   right: 0; 
   opacity: 0;
-  /* visibility: hidden;
-  transition: 0.2s; */
+  visibility: hidden;
+  transition: 0.2s;
 }
 
 .exercise {
@@ -97,4 +101,9 @@ body {
 .excersise:hover .kalku {
   opacity: 1;
   visibility: visible;
+}
+
+#kalku:target{
+  visibility: visible;
+  opacity: 1;
 }
