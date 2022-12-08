@@ -65,16 +65,10 @@ body {
   transition: 0.2s;
 }
 
-.active{
-  visibility: visible;
-  opacity: 1;
-}
 
 .kalku {
   display: inline-block;
   justify-content: center;
-  /* visibility: hidden; */
- 
   flex-wrap: wrap;
   background-color: white;
   visibility: hidden; 
@@ -98,12 +92,10 @@ body {
   font-size: 1.4rem;
   cursor: pointer;
 }
-.excersise:hover .kalku {
-  opacity: 1;
-  visibility: visible;
-}
 
-#kalku:target{
+
+
+.active{
   visibility: visible;
   opacity: 1;
 }
