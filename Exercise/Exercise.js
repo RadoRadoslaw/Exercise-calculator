@@ -8,6 +8,7 @@ $(".dropdown-select").on("click",function(){
   }
 });
 
+
 $(".dropdown-list a").on("click",function(){
   $(".dropdown-list").removeClass("active");
 
