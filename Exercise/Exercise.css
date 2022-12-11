@@ -101,7 +101,20 @@ body {
 }
 
 
+.kalku-licznik {
+  display: inline-block;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(73, 201, 84);
+  visibility: hidden; 
+  transition: 0.2s;
+  height: 50%;
+  width:100%;
 
+}
+
+
+/* to ma byc na dole */
 .active{
   visibility: visible;
   opacity: 1;
