@@ -32,6 +32,7 @@ body {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+
 }
 
 .dropdown:hover .dropdown-list {
@@ -53,19 +54,21 @@ body {
 
 }
 
-.dropdown-list {
+.dropdown-list { 
+
   margin-top: 1rem;
   top: 100%;
   width: 100%;
   border-radius: 4px;
   background-color: white;
-
+  
   font-size: 1.6rem;
   visibility: hidden;
   opacity: 0;
   transition: 0.2s;
-  display: flex;
-  height: 100%;
+  display: flex; 
+  /* to trzeba zmienić na % */
+  height: 140px;
   justify-content: space-evenly;
   flex-direction: column;
  

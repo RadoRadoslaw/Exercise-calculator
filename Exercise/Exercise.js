@@ -21,15 +21,6 @@ $(".dropdown-list a").on("click",function(){
 });
 
 
-// $("#kalku").on("click",function(){
-//   $(".dropdown-list").removeClass("active");
 
-//   let span=$(this).attr("#kalku-licznik");
-//   let elem=$(span);
-//   if(elem.hasClass("active")==true){
-//     elem.removeClass("active");
-//   }else{
-//     elem.addClass("active");
-//   }
-// });
+
 
