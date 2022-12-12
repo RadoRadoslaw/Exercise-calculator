@@ -22,8 +22,17 @@ $(".dropdown-list a").on("click",function(){
 });
 
 
-// $("#pull-up").on("click",function(){
-//   $(".dropdown-list").removeClass("active");
+$(".kalkulicznik").on("click",function(){
+  $(".dropdown-list").removeClass("active");
+
+  let span=$(this).attr("#kalku-licznik");
+  let elem=$(span);
+  if(elem.hasClass("active")==true){
+    elem.removeClass("active");
+  }else{
+    elem.addClass("active");
+  }
+});
 
 //   let href=$(this).attr("data-href");
 //   let elem=$(href);

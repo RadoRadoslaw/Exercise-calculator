@@ -32,7 +32,6 @@ body {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
-  height: 35%;
 }
 
 .dropdown:hover .dropdown-list {
@@ -50,8 +49,8 @@ body {
   justify-content: space-between;
   font-size: 1.6rem;
   cursor: pointer;
-  height: 35%;
- 
+  height: 100%;
+
 }
 
 .dropdown-list {
@@ -105,6 +104,8 @@ body {
   width: 100%;
   border-radius: 4px;
   background-color: white;
+  height: 100%;
+  
 
   font-size: 1.6rem;
   visibility: hidden;
@@ -112,8 +113,53 @@ body {
   transition: 0.2s;
 }
 
-/* to na dole nusi być  */
-.active {
+
+.kalku {
+  display: inline-block;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  visibility: hidden; 
+  transition: 0.2s;
+  height: 50%;
+  width:100%;
+}
+
+
+.kalku-licznik {
+  right: -180px;
+  border-radius: 4px;
+  background-color: white;
+  left: 0;
+  right: 0; 
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.exercise {
+  padding: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+
+.kalku-licznik {
+  display: inline-block;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(73, 201, 84);
+  visibility: hidden; 
+  transition: 0.2s;
+  height: 50%;
+  width:100%;
+
+}
+
+
+/* to ma byc na dole */
+.active{
+
   visibility: visible;
   opacity: 1;
 }
