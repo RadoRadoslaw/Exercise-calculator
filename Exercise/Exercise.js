@@ -20,22 +20,12 @@ $(".dropdown-list a").on("click",function(){
   }
 });
 
-<<<<<<< HEAD
 
-$("#kalku").on("click",function(){
-  $(".dropdown-list").removeClass("active");
+// $("#kalku").on("click",function(){
+//   $(".dropdown-list").removeClass("active");
 
-  let span=$(this).attr("#kalku-licznik");
-  let elem=$(span);
-  if(elem.hasClass("active")==true){
-    elem.removeClass("active");
-  }else{
-    elem.addClass("active");
-  }
-});
-
-//   let href=$(this).attr("data-href");
-//   let elem=$(href);
+//   let span=$(this).attr("#kalku-licznik");
+//   let elem=$(span);
 //   if(elem.hasClass("active")==true){
 //     elem.removeClass("active");
 //   }else{
@@ -43,5 +33,3 @@ $("#kalku").on("click",function(){
 //   }
 // });
 
-=======
->>>>>>> parent of 6393a0a (mmmm)
