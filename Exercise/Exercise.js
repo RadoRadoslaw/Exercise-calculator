@@ -21,6 +21,7 @@ $(".dropdown-list a").on("click",function(){
   }
 });
 
+<<<<<<< HEAD
 
 $("#kalku").on("click",function(){
   $(".dropdown-list").removeClass("active");
@@ -43,3 +44,5 @@ $("#kalku").on("click",function(){
 //   }
 // });
 
+=======
+>>>>>>> parent of 6393a0a (mmmm)
