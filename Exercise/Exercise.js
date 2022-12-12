@@ -22,7 +22,7 @@ $(".dropdown-list a").on("click",function(){
 });
 
 
-$(".kalkulicznik").on("click",function(){
+$("#kalku").on("click",function(){
   $(".dropdown-list").removeClass("active");
 
   let span=$(this).attr("#kalku-licznik");
