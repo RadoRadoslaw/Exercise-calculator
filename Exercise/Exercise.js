@@ -46,5 +46,29 @@ done.addEventListener("click", function(){
   int.innerHTML = integer;
 });
 
+// WRZUCANIE DO SETA:
+const sets = JSON.stringify(integer);
+console.log(integer);
+
+
+
+
+
+// let wynik=localStorage.getItem("number")
+// if(first!=null){
+//   get("#first").innerHTML = first;
+// }
+
+
+// get("#SCORE").innerHTML="";
+// const wyniki=localStorage.getItem("wyniki");
+// if(wyniki!=null){
+//   game.points=JSON.parse(wyniki);
+//   game.points.forEach(function(value,i){
+//     get("#SCORE").innerHTML+=value;
+//   });
+// }
+
+// localStorage.setItem("wyniki", JSON.stringify(game.points));
 
 
