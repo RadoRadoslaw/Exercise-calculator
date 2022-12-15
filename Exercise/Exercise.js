@@ -47,8 +47,17 @@ done.addEventListener("click", function(){
 });
 
 // WRZUCANIE DO SETA:
-const sets = JSON.stringify(integer);
-console.log(integer);
+const SETS = []
+
+function dodaj(){
+  document.querySelector(".done") =  sets.push(integer) ;
+}
+
+
+
+
+// const sets = JSON.parse(localStorage.getItem("number"));
+// console.log(number);
 
 
 
