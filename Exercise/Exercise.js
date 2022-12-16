@@ -21,36 +21,32 @@ $(".dropdown-list a").on("click",function(){
 });
  
 // KALKULATOR:
-let add = document.getElementById("increment");
-
-let remove = document.getElementById("decrement");
-
-let int = document.getElementById("number");
-
 let integer = 0;
 
-add.addEventListener("click", function(){
+$("#kalku #increment").on("click", function(){
   integer += 1;
-  int.innerHTML = integer;
+  $("#kalku #number").html(integer);
 });
 
-remove.addEventListener("click", function(){
+$("#kalku #decrement").on("click", function(){
   integer -= 1;
-  int.innerHTML = integer;
+  $("#kalku #number").html(integer);
 });
-
-let done = document.getElementById("done");
-
-// done.addEventListener("click", function(){
-//   integer = 0
-//   int.innerHTML = integer;
-// });
 
 // WRZUCANIE DO SETA:
-const SETS = []
-done.addEventListener("click", function(){
+
+// WCZYTYWANIE DANYCH DO SETS:
+let SETS = []
+
+const load=localStorage.getItem("sets");
+if(load){
+	SETS=JSON.parse(load);
+	$("#sets").html("Your sets: "+SETS);
+}
+
+$("#kalku #done").on("click", function(){
   SETS.push(integer);
-  document.querySelector("#sets").innerHTML="Your sets: "+SETS;
+  $("#sets").html("Your sets: "+SETS);
   localStorage.setItem("sets",JSON.stringify(SETS));
   integer = 0;
 });
