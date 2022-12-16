@@ -41,17 +41,20 @@ remove.addEventListener("click", function(){
 
 let done = document.getElementById("done");
 
-done.addEventListener("click", function(){
-  integer = 0
-  int.innerHTML = integer;
-});
+// done.addEventListener("click", function(){
+//   integer = 0
+//   int.innerHTML = integer;
+// });
 
 // WRZUCANIE DO SETA:
 const SETS = []
+done.addEventListener("click", function(){
+  SETS.push(integer);
+  document.querySelector("#sets").innerHTML="Your sets: "+SETS;
+  localStorage.setItem("sets",JSON.stringify(SETS));
+  integer = 0;
+});
 
-function dodaj(){
-  document.querySelector(".done") =  sets.push(integer) ;
-}
 
 
 
