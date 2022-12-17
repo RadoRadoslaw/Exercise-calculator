@@ -18,7 +18,13 @@ $(".dropdown-list a").on("click",function(){
   }else{
     elem.addClass("active");
   }
+
 });
+
+
+
+
+
  
 // KALKULATOR:
 let integer = 0;
