@@ -70,34 +70,34 @@ body {
   flex-direction: column;
 }
 
-.kalku-licznik {
+/* .kalku-licznik {
   border-radius: 4px;
   background-color: rgba(236, 167, 238, 0.418);
   left: 0;
   right: 0;
   visibility: hidden;
   transition: 0.2s;
-}
-
+} */
+/* 
 .exercise {
   padding: 1rem;
   font-size: 1.4rem;
   cursor: pointer;
-}
+} */
 
 .kalku {
-  display: inline-block;
+  display: none;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: rgba(136, 80, 209, 0.479);
-  visibility: hidden;
+  /* visibility: hidden; */
   transition: 0.2s;
   height: 50%;
   width: 100%;
   border-radius: 4px;
 }
 
-.kalku-licznik {
+/* .kalku-licznik {
   right: -180px;
   border-radius: 4px;
   background-color: white;
@@ -106,7 +106,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: 0.2s;
-}
+} */
 
 .exercise {
   padding: 1rem;
@@ -177,4 +177,7 @@ font-size: 1.6rem;
 .active {
   visibility: visible;
   opacity: 1;
+}
+.show {
+  display: block
 }

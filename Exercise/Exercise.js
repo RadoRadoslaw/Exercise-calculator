@@ -13,10 +13,10 @@ $(".dropdown-list a").on("click",function(){
 
   let href=$(this).attr("data-href");
   let elem=$(href);
-  if(elem.hasClass("active")==true){
-    elem.removeClass("active");
+  if(elem.hasClass("show")==true){
+    elem.removeClass("show");
   }else{
-    elem.addClass("active");
+    elem.addClass("show");
   }
 
 });
