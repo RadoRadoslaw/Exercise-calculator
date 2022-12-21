@@ -10,7 +10,7 @@ $(".dropdown-select").on("click",function(){
 
 $(".dropdown-list a").on("click",function(){
   $(".dropdown-list").removeClass("active");
-
+  $(".kalku").removeClass("show")
   let href=$(this).attr("data-href");
   let elem=$(href);
   if(elem.hasClass("show")==true){
@@ -23,40 +23,62 @@ $(".dropdown-list a").on("click",function(){
 
 
 
-
-
  
 // KALKULATOR:
 let integer = 0;
 
-$("#kalku #increment").on("click", function(){
+
+$("#kalku1 #increment").on("click", function(){
   integer += 1;
-  $("#kalku #number").html(integer);
+  $("#kalku1 #number").html(integer);
 });
 
-$("#kalku #decrement").on("click", function(){
+$("#kalku1 #decrement").on("click", function(){
   integer -= 1;
-  $("#kalku #number").html(integer);
+  $("#kalku1 #number").html(integer);
+});
+
+$("#kalku2 #increment").on("click", function(){
+  integer += 1;
+  $("#kalku2 #number").html(integer);
+});
+
+$("#kalku2 #decrement").on("click", function(){
+  integer -= 1;
+  $("#kalku2 #number").html(integer);
 });
 
 // WRZUCANIE DO SETA:
 
 // WCZYTYWANIE DANYCH DO SETS:
 let SETS = []
-
 const load=localStorage.getItem("sets");
 if(load){
 	SETS=JSON.parse(load);
 	$("#sets").html("Your sets: "+SETS);
 }
 
-$("#kalku #done").on("click", function(){
+$("#kalku1  #done").on("click", function(){
   SETS.push(integer);
   $("#sets").html("Your sets: "+SETS);
   localStorage.setItem("sets",JSON.stringify(SETS));
   integer = 0;
 });
+///////////kalku2//////
+let SETS2 = []
+const load2=localStorage.getItem("sets");
+if(load2){
+	SETS2=JSON.parse(load2);
+	$("#sets").html("Your sets: "+SETS2);
+}
 
+$("#kalku2  #done").on("click", function(){
+  SETS2.push(integer);
+  $("#sets").html("Your sets: "+SETS2);
+  localStorage.setItem("sets",JSON.stringify(SETS2));
+   integer = 0;
+
+});
 
 
 
