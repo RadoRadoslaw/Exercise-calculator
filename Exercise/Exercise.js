@@ -74,32 +74,32 @@ $("#kalku1  #done").on("click", function(){
   integer = 0;
 });
 ///////////kalku2//////
-
+let SETS2 = []
 const load2=localStorage.getItem("sets2");
 if(load){
-	SETS=JSON.parse(load);
-	$("#sets2").html("Your sets: "+SETS);
+	SETS2=JSON.parse(load);
+	$("#sets2").html("Your sets: "+SETS2);
 }
 
 $("#kalku2  #done").on("click", function(){
-  SETS.push(integer);
-  $("#sets2").html("Your sets: "+SETS);
-  localStorage.setItem("sets2",JSON.stringify(SETS));
+  SETS2.push(integer);
+  $("#sets2").html("Your sets: "+SETS2);
+  localStorage.setItem("sets2",JSON.stringify(SETS2));
    integer = 0;
 
 });
 //////////////////kalku3///////////////
-
+let SETS3= []
 const load3=localStorage.getItem("sets3");
 if(load){
-	SETS=JSON.parse(load);
-	$("#sets3").html("Your sets: "+SETS);
+	SETS3=JSON.parse(load);
+	$("#sets3").html("Your sets: "+SETS3);
 }
 
 $("#kalku3  #done").on("click", function(){
-  SETS.push(integer);
-  $("#sets3").html("Your sets: "+SETS);
-  localStorage.setItem("sets3",JSON.stringify(SETS));
+  SETS3.push(integer);
+  $("#sets3").html("Your sets: "+SETS3);
+  localStorage.setItem("sets3",JSON.stringify(SETS3));
    integer = 0;
 
 });
