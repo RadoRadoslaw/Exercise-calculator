@@ -70,7 +70,7 @@ if(load){
 $("#kalku1  #done").on("click", function(){
   SETS.push(integer);
   $("#sets").html("Your sets: "+SETS);
-  localStorage.setItem("sets2",JSON.stringify(SETS));
+  localStorage.setItem("sets",JSON.stringify(SETS));
   integer = 0;
 });
 ///////////kalku2//////
