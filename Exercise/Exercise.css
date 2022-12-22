@@ -108,11 +108,11 @@ body {
   transition: 0.2s;
 } */
 
-.exercise {
+/* .exercise {
   padding: 1rem;
   font-size: 1.4rem;
   cursor: pointer;
-}
+} */
 .pull-up{
   margin-top: 5%;
   display: flex;

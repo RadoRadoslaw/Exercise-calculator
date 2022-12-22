@@ -74,9 +74,6 @@ $("#kalku1  #done").on("click", function(){
   integer = 0;
 });
 
-$("#kalku1  #reset").on("click", function(){
-  sets=[]
-});
 
 
 
@@ -116,6 +113,11 @@ $("#kalku3  #done").on("click", function(){
 });
 
 
+$(".kalku  #reset").on("click", function(){
+  SETS=[]
+  SETS2=[]
+  SETS3=[]
+});
 
 
 // const sets = JSON.parse(localStorage.getItem("number"));
