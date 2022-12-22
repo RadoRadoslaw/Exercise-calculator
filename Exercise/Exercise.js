@@ -61,7 +61,7 @@ $("#kalku3 #decrement").on("click", function(){
 
 // WCZYTYWANIE DANYCH DO SETS:
 let SETS = []
-const load=localStorage.getItem("sets2");
+const load=localStorage.getItem("sets");
 if(load){
 	SETS=JSON.parse(load);
 	$("#sets").html("Your sets: "+SETS);
@@ -73,6 +73,14 @@ $("#kalku1  #done").on("click", function(){
   localStorage.setItem("sets",JSON.stringify(SETS));
   integer = 0;
 });
+
+$("#kalku1  #reset").on("click", function(){
+  sets=[]
+});
+
+
+
+
 ///////////kalku2//////
 let SETS2 = []
 const load2=localStorage.getItem("sets2");
@@ -86,8 +94,11 @@ $("#kalku2  #done").on("click", function(){
   $("#sets2").html("Your sets: "+SETS2);
   localStorage.setItem("sets2",JSON.stringify(SETS2));
    integer = 0;
-
 });
+
+
+
+
 //////////////////kalku3///////////////
 let SETS3= []
 const load3=localStorage.getItem("sets3");
