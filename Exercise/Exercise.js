@@ -117,6 +117,11 @@ $(".kalku  #reset").on("click", function(){
   SETS=[]
   SETS2=[]
   SETS3=[]
+$(".kalku #number").html(integer=0)
+$(".kalku #sets").html("Your sets: ")
+$(".kalku #sets2").html("Your sets: ")
+$(".kalku #sets3").html("Your sets: ")
+  
 });
 
 
