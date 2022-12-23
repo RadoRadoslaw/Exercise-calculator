@@ -71,7 +71,7 @@ $("#kalku4 #decrement").on("click", function(){
 let EXER = ""
 const add=localStorage.getItem("name");
 
-if(load){
+if(add){
 	EXER=JSON.parse(load);
 	$("#other").html(" "+EXER);
 }
@@ -80,13 +80,13 @@ $("#additional  #add").on("click", function(){
   EXER.push("#addexercise");
   $("#other").html(""+EXER);
   localStorage.setItem("name",JSON.stringify(EXER));
-  "#other" = "";
+  // "#other" = "";
 });
 
-if("#additional  #add").on("click", function(){
-   $("#kalku4")
-    (elem.hasClass("show")==true)
-});
+// if("#additional  #add").on("click", function(){
+//    $("#kalku4")
+//     (elem.hasClass("show")==true)
+// });
   
 
 
