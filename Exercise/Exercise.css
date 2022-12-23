@@ -209,15 +209,18 @@ font-size: 1.6rem;
   height: 100px;
   width: 100px;
   flex-wrap: wrap;
+  background-color: rgba(242, 214, 247, 0.863);
 }#sets3 {
   height: 100px;
   width: 100px;
   flex-wrap: wrap;
+  background-color: rgba(242, 214, 247, 0.863);
 }
 #sets4 {
   height: 100px;
   width: 100px;
   flex-wrap: wrap;
+  background-color: rgba(242, 214, 247, 0.863);
 }
 #reset{
   margin-top: 5%;
