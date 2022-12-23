@@ -77,10 +77,10 @@ if(add){
 }
 
 $("#additional  #add").on("click", function(){
-  EXER.push("#addexercise");
+  EXER +=("#addexercise");
   $("#other").html(""+EXER);
   localStorage.setItem("name",JSON.stringify(EXER));
-  // "#other" = "";
+  // $("#addexercise") += "";
 });
 
 // if("#additional  #add").on("click", function(){
