@@ -69,8 +69,6 @@ $("#kalku4 #decrement").on("click", function(){
 
 ////////////dodawanie ćwiczenia/////////////
 let EXER = ""
-
-
 const add=localStorage.getItem("name");
 
 if(load){
@@ -78,12 +76,12 @@ if(load){
 	$("#other").html(" "+EXER);
 }
 
-$("#additional  #add").on("click", function(){
-  EXER.push("#addexercise");
-  $("#other").html(""+EXER);
-  localStorage.setItem("name",JSON.stringify(EXER));
-  // "#other" = "";
-});
+// $("#additional  #add").on("click", function(){
+//   EXER.push("#addexercise");
+//   $("#other").html(""+EXER);
+//   localStorage.setItem("name",JSON.stringify(EXER));
+//   "#other" = "";
+// });
 
 // if("#additional  #add").on("click", function(){
 //    $("#kalku4")
