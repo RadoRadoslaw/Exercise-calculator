@@ -110,8 +110,8 @@ $("#kalku1  #done").on("click", function(){
 ///////////kalku2//////
 let SETS2 = []
 const load2=localStorage.getItem("sets2");
-if(load){
-	SETS2=JSON.parse(load);
+if(load2){
+	SETS2=JSON.parse(load2);
 	$("#sets2").html("Your sets: "+SETS2);
 }
 
@@ -125,8 +125,8 @@ $("#kalku2  #done").on("click", function(){
 //////////////////kalku3///////////////
 let SETS3= []
 const load3=localStorage.getItem("sets3");
-if(load){
-	SETS3=JSON.parse(load);
+if(load3){
+	SETS3=JSON.parse(load3);
 	$("#sets3").html("Your sets: "+SETS3);
 }
 
@@ -139,8 +139,8 @@ $("#kalku3  #done").on("click", function(){
 });
 let SETS4= []
 const load4=localStorage.getItem("sets4");
-if(load){
-	SETS4=JSON.parse(load);
+if(load4){
+	SETS4=JSON.parse(load4);
 	$("#sets4").html("Your sets: "+SETS3);
 }
 
