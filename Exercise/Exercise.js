@@ -80,13 +80,16 @@ $("#additional  #add").on("click", function(){
   EXER += $("#addexercise").val();
   $("#other").html(""+EXER);
   localStorage.setItem("name",JSON.stringify(EXER));
+  
 });
 
 if( $("#additional  #add").on("click", function(){
    $("#kalku4").addClass("show");
    $("#additional").removeClass("show")
 }));
-  
+  if ($("#kalku4 #reset").on("click", function(){
+    $("#addexercise").val = ""
+}));
 
 
 // WRZUCANIE DO SETA:
