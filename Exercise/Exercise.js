@@ -73,20 +73,19 @@ const add=localStorage.getItem("name");
 
 if(add){
 	EXER=JSON.parse(add);
-	$("#other").html(" "+EXER);
+	$("#other").html(""+EXER);
 }
 
 $("#additional  #add").on("click", function(){
-  EXER +=("#addexercise");
+  EXER += $("#addexercise").val();
   $("#other").html(""+EXER);
   localStorage.setItem("name",JSON.stringify(EXER));
-  // $("#addexercise") += "";
 });
 
-// if("#additional  #add").on("click", function(){
-//    $("#kalku4")
-//     (elem.hasClass("show")==true)
-// });
+if( $("#additional  #add").on("click", function(){
+   $("#kalku4").addClass("show");
+   $("#additional").removeClass("show")
+}));
   
 
 
