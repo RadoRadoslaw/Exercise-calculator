@@ -72,7 +72,7 @@ let EXER = ""
 const add=localStorage.getItem("name");
 
 if(add){
-	EXER=JSON.parse(load);
+	EXER=JSON.parse(add);
 	$("#other").html(" "+EXER);
 }
 
