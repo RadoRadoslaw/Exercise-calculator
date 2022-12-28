@@ -93,6 +93,13 @@ if( $("#additional  #add").on("click", function(){
 }));
 
 
+if ( $(".dropdown-list a #content").on("click",fumction(){
+  generate();
+}));
+
+
+
+
 // WRZUCANIE DO SETA:
 
 // WCZYTYWANIE DANYCH DO SETS:
@@ -169,29 +176,29 @@ $(".kalku #sets4").html("Your sets: ")
   
 });
 
+////////NEW EXERCISES////////////////////////////////////////////////
 
-// const sets = JSON.parse(localStorage.getItem("number"));
-// console.log(number);
+// $(window).on("load",function(){
+//   generate();
+// })
 
+const data=[
+  {
+       title:"Tytuł 1",
+				description:"Opis 1"
+  }
+];
 
-
-
-
-// let wynik=localStorage.getItem("number")
-// if(first!=null){
-//   get("#first").innerHTML = first;
-// }
-
-
-// get("#SCORE").innerHTML="";
-// const wyniki=localStorage.getItem("wyniki");
-// if(wyniki!=null){
-//   game.points=JSON.parse(wyniki);
-//   game.points.forEach(function(value,i){
-//     get("#SCORE").innerHTML+=value;
-//   });
-// }
-
-// localStorage.setItem("wyniki", JSON.stringify(game.points));
-
-
+function generate(){
+  // Pętla które przepierdziela Array obiektów o nazwie "data":
+  data.forEach(function(element){
+    console.log(element)
+    $("#content").append(`
+      <div class="card">
+        <h1 class="title">${element.title}</h1>
+        <div class="description">${element.description}</div>
+        <button>Przycisk</button>
+      </div>
+    `);
+  });
+}

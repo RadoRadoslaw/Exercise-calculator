@@ -228,6 +228,26 @@ body {
   background-color: rgb(235, 94, 94);
 }
 
+
+
+#content{
+  display: flex;
+  justify-content: center;
+}
+#content .card{
+  font-family: "Arial";
+  width: 33%;
+  margin:.5rem;
+  padding: .5rem;
+  background: purple;
+  color:#fff;
+  text-align: center;
+}
+#content .card .title{
+  font-size: 22px;
+}
+
+
 .active {
   visibility: visible;
   opacity: 1;
