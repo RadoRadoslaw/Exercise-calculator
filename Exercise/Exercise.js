@@ -72,14 +72,15 @@ let EXER = ""
 const add=localStorage.getItem("name");
 
 if(add){
-	EXER=JSON.parse(add);
-	$("#other").html(""+EXER);
+	EXER=(add);
+	$(".other").html(""+EXER);
 }
 
 $("#additional  #add").on("click", function(){
   EXER += $("#addexercise").val();
-  $("#other").html(""+EXER);
-  localStorage.setItem("name",JSON.stringify(EXER));
+  $(".other").html(""+EXER);
+  localStorage.setItem("name", EXER);
+  localStorage.clear();
   
 });
 
@@ -88,7 +89,7 @@ if( $("#additional  #add").on("click", function(){
    $("#additional").removeClass("show")
 }));
   if ($("#kalku4 #reset").on("click", function(){
-    $("#addexercise").val = ""
+    $(".other").html("")
 }));
 
 
