@@ -93,10 +93,9 @@ if( $("#additional  #add").on("click", function(){
 }));
 
 
-if ( $(".dropdown-list a #content" ).on("click",fumction(){
+$(".dropdown-list a.paly" ).on("click",fumction(){
   generate();
-}));
-
+});
 
 
 
@@ -194,7 +193,7 @@ function generate(){
   data.forEach(function(element){
     console.log(element)
     $("#content").append(`
-      <div id="content" class="card">
+      <div class="card">
         <h1 class="title">${element.title}</h1>
         <div class="description">${element.description}</div>
         <button>Przycisk</button>
