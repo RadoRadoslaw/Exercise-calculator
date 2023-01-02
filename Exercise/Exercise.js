@@ -93,7 +93,7 @@ if( $("#additional  #add").on("click", function(){
 }));
 
 
-$(".dropdown-list a.paly" ).on("click",fumction(){
+$(".dropdown-list a.paly" ).on("click",function(){
   generate();
 });
 
@@ -200,4 +200,8 @@ function generate(){
       </div>
     `);
   });
+  	// Dodanie akcji do wszystkich button'ów w elemencie #content akcji usuwania elementu "card", parentNode to rodzic elementu button
+    $("#content button").on("click",function(){
+      this.parentNode.remove();
+    });
 }
