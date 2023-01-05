@@ -191,7 +191,7 @@ function generate(){
       <div class="card">
         <h1 class="title">${element.title}</h1>
         <div class="description">${element.description}</div>
-        <input type="text" id="addexercise"></input>
+        <input type="text" id="addexercise">
         <button id="add">dodaj</button>
       </div>
     `);
@@ -200,11 +200,12 @@ function generate(){
   	// Dodanie akcji do wszystkich button'ów w elemencie #content akcji usuwania elementu "card", parentNode to rodzic elementu button
 
     $("#content #add").on("click",function(){
-      this.parentNode.remove();
+    
       $("#kalku4").addClass("show");
       EXER += $("#addexercise").val();
       $(".other").html(""+EXER);
       localStorage.setItem("name", EXER);
-      localStorage.clear();
+      localStorage.clear(); 
+      this.parentNode.remove();
     });
 }
