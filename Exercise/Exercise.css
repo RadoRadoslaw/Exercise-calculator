@@ -235,19 +235,28 @@ body {
   justify-content: center;
 }
 #content .card{
-  font-family: "Arial";
-  width: 33%;
-
-  margin:.5rem;
-  padding: .5rem;
-  background: purple;
-  color:#fff;
-  text-align: center;
+  display: inline-block;
+  flex-direction: column;
+  padding: 2.5rem;
+  border-radius: 4px;
+  background-color: rgba(242, 214, 247, 0.863);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  cursor: pointer;
+  height: 100%;
 }
 #content .card .title{
   font-size: 22px;
 }
 
+#addexercise{
+  display: flex;
+  justify-content: center;
+
+}
 
 .active {
   visibility: visible;

@@ -76,7 +76,7 @@ if(add){
 	$(".other").html(""+EXER);
 }
 
-$("#additional  #add").on("click", function(){
+$("#content  #add").on("click", function(){
   EXER += $("#addexercise").val();
   $(".other").html(""+EXER);
   localStorage.setItem("name", EXER);
@@ -84,16 +84,16 @@ $("#additional  #add").on("click", function(){
   
 });
 
-if( $("#additional  #add").on("click", function(){
+if( $("#content  #add").on("click", function(){
    $("#kalku4").addClass("show");
-   $("#additional").removeClass("show")
+   $("#content").removeClass("show")
 }));
   if ($("#kalku4 #reset").on("click", function(){
     $(".other").html("")
 }));
 
 
-$(".dropdown-list a.paly" ).on("click",function(){
+$(".dropdown-list a.play" ).on("click",function(){
   generate();
 });
 
@@ -183,8 +183,9 @@ $(".kalku #sets4").html("Your sets: ")
 
 const data=[
   {
-       title:"Tytuł 1",
-				description:"Opis 1"
+       title:"dodaj ćwiczenie",
+				description:""
+        
   }
 ];
 
@@ -196,12 +197,14 @@ function generate(){
       <div class="card">
         <h1 class="title">${element.title}</h1>
         <div class="description">${element.description}</div>
-        <button>Przycisk</button>
+        <input type="text" id="addexercise"></input>
+        <button id="add">dodaj</button>
       </div>
     `);
+    
   });
   	// Dodanie akcji do wszystkich button'ów w elemencie #content akcji usuwania elementu "card", parentNode to rodzic elementu button
-    $("#content button").on("click",function(){
+    $("#content #add").on("click",function(){
       this.parentNode.remove();
     });
 }
