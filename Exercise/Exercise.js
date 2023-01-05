@@ -68,29 +68,20 @@ $("#kalku4 #decrement").on("click", function(){
 });
 
 ////////////dodawanie ćwiczenia/////////////
-let EXER = ""
-const add=localStorage.getItem("name");
 
-if(add){
-	EXER=(add);
-	$(".other").html(""+EXER);
-}
 
-$("#content  #add").on("click", function(){
-  EXER += $("#addexercise").val();
-  $(".other").html(""+EXER);
-  localStorage.setItem("name", EXER);
-  localStorage.clear();
+// $("#content  #add").on("click", function(){
+//   EXER += $("#addexercise").val();
+//   $(".other").html(""+EXER);
+//   localStorage.setItem("name", EXER);
+//   localStorage.clear();
   
-});
+// });
 
-if( $("#content  #add").on("click", function(){
-   $("#kalku4").addClass("show");
-   $("#content").removeClass("show")
-}));
-  if ($("#kalku4 #reset").on("click", function(){
-    $(".other").html("")
-}));
+
+//   if ($("#kalku4 #reset").on("click", function(){
+//     $(".other").html("")
+// }));
 
 
 $(".dropdown-list a.play" ).on("click",function(){
@@ -175,11 +166,14 @@ $(".kalku #sets4").html("Your sets: ")
   
 });
 
-////////NEW EXERCISES////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+let EXER = ""
+const add=localStorage.getItem("name");
 
-// $(window).on("load",function(){
-//   generate();
-// })
+if(add){
+  EXER=(add);
+  $(".other").html(""+EXER);
+}
 
 const data=[
   {
@@ -204,7 +198,13 @@ function generate(){
     
   });
   	// Dodanie akcji do wszystkich button'ów w elemencie #content akcji usuwania elementu "card", parentNode to rodzic elementu button
+
     $("#content #add").on("click",function(){
       this.parentNode.remove();
+      $("#kalku4").addClass("show");
+      EXER += $("#addexercise").val();
+      $(".other").html(""+EXER);
+      localStorage.setItem("name", EXER);
+      localStorage.clear();
     });
 }
