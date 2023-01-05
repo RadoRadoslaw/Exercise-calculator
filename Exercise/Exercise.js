@@ -70,20 +70,6 @@ $("#kalku4 #decrement").on("click", function(){
 ////////////dodawanie ćwiczenia/////////////
 
 
-// $("#content  #add").on("click", function(){
-//   EXER += $("#addexercise").val();
-//   $(".other").html(""+EXER);
-//   localStorage.setItem("name", EXER);
-//   localStorage.clear();
-  
-// });
-
-
-//   if ($("#kalku4 #reset").on("click", function(){
-//     $(".other").html("")
-// }));
-
-
 $(".dropdown-list a.play" ).on("click",function(){
   generate();
 });
