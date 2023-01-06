@@ -194,7 +194,7 @@ function generate(){
 
       localStorage.setItem("name", EXER);
     
-      localStorage.clear(); 
+      // localStorage.clear(); 
       this.parentNode.remove();
     });
 }
