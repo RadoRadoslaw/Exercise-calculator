@@ -190,7 +190,10 @@ function generate(){
       $("#kalku4").addClass("show");
       EXER += $("#addexercise").val();
       $(".other").html(""+EXER);
+      $(".put").html(""+EXER);
+
       localStorage.setItem("name", EXER);
+    
       localStorage.clear(); 
       this.parentNode.remove();
     });
