@@ -235,8 +235,13 @@ body {
   display: flex;
   justify-content: center;
 }
-#numeryx{
-  margin-top: 8%;
+
+#stat{
+  margin-top: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
 }
 
 .active {

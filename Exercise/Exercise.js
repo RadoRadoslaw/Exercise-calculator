@@ -193,8 +193,10 @@ function generate(){
       $(".put").html(""+EXER);
 
       localStorage.setItem("name", EXER);
-    
+      alert(localStorage.getItem("name"));
       // localStorage.clear(); 
       this.parentNode.remove();
     });
+    
 }
+
