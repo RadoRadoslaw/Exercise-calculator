@@ -153,12 +153,12 @@ $(".kalku #sets4").html("Your sets: ")
 });
 
 ///////////////////////////////////////////////////////////
-let EXER = ""
+let EXER = [];
 const add=localStorage.getItem("name");
 
 if(add){
-  EXER=(add);
-  $(".other").html(""+EXER);
+  EXER=JSON.parse(add);
+  $(".other").html(EXER);
 }
 
 const data=[
@@ -188,11 +188,11 @@ function generate(){
     $("#content #add").on("click",function(){
     
       $("#kalku4").addClass("show");
-      EXER += $("#addexercise").val();
-      $(".other").html(""+EXER);
-      $(".put").html(""+EXER);
+      EXER.push($("#addexercise").val());
+      $(".other").html(EXER);
+      $(".put").html(EXER);
 
-      localStorage.setItem("name", EXER);
+      localStorage.setItem("name", JSON.stringify(EXER));
       alert(localStorage.getItem("name"));
       // localStorage.clear(); 
       this.parentNode.remove();
