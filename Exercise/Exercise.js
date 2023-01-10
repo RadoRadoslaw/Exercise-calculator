@@ -18,10 +18,11 @@ $(".dropdown-list a").on("click",function(){
   }else{
     elem.addClass("show");
   }
+// /$("#stat") zrobić żeby nie wyłączało stat
 
 });
 
- 
+
 // KALKULATOR:
 let integer = 0;
 
@@ -71,8 +72,7 @@ $("#kalku4 #decrement").on("click", function(){
 $(".dropdown-list a.play" ).on("click",function(){
   generate();
 });
-
-localStorage.clear(); 
+ 
 
 // WRZUCANIE DO SETA:
 
@@ -191,7 +191,6 @@ function generate(){
       $(".put").html(EXER);
 
       localStorage.setItem("name", JSON.stringify(EXER));
-      alert(localStorage.getItem("name"));
     
       this.parentNode.remove();
     });
