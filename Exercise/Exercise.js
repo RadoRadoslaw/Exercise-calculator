@@ -21,8 +21,6 @@ $(".dropdown-list a").on("click",function(){
 
 });
 
-
-
  
 // KALKULATOR:
 let integer = 0;
