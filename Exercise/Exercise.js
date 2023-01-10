@@ -72,7 +72,7 @@ $(".dropdown-list a.play" ).on("click",function(){
   generate();
 });
 
-
+localStorage.clear(); 
 
 // WRZUCANIE DO SETA:
 
@@ -155,7 +155,7 @@ let EXER = [];
 const add=localStorage.getItem("name");
 
 if(add){
-  EXER=JSON.parse(add);
+  EXER = JSON.parse(add);
   $(".other").html(EXER);
 }
 
@@ -192,7 +192,7 @@ function generate(){
 
       localStorage.setItem("name", JSON.stringify(EXER));
       alert(localStorage.getItem("name"));
-      // localStorage.clear(); 
+    
       this.parentNode.remove();
     });
     
