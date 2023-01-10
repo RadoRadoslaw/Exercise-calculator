@@ -17,6 +17,8 @@ $(".dropdown-list a").on("click",function(){
     elem.removeClass("show");
   }else{
     elem.addClass("show");
+  }else{
+    $("#stst") 
   }
 
 });
