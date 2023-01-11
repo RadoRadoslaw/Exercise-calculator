@@ -197,3 +197,26 @@ function generate(){
     
 }
 
+const now = new Date() 
+console.log(new Date);
+
+  now.toLocaleString("pl",{
+    dataStyle: "short",
+    timeStyle: "short"
+  });
+console.log(now);
+
+
+
+const statdata = []
+
+
+localStorage.setItem("sets",(statdata));
+console.log(statdata);
+
+$("#kalku1  #done").on("click", function(){
+  SETS + now.push(statdata);
+  $("#ststistic").html(+statdata);
+  localStorage.setItem("statdata",JSON.stringify(statdata));
+  
+});
