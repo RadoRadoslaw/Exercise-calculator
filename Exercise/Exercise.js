@@ -18,9 +18,9 @@ $(".dropdown-list a").on("click",function(){
   }else{
     elem.addClass("show");
   }
-// /$("#stat") zrobić żeby nie wyłączało stat
 
 });
+
 
 
 // KALKULATOR:
