@@ -197,26 +197,30 @@ function generate(){
     
 }
 
-const now = new Date() 
-console.log(new Date);
-
-  now.toLocaleString("pl",{
-    dataStyle: "short",
-    timeStyle: "short"
-  });
-console.log(now);
 
 
 
-const statdata = []
+const statdata = [
+  {
+    obecnaData:"11.01.2023"
+  }
+];
 
-
-localStorage.setItem("sets",(statdata));
-console.log(statdata);
 
 $("#kalku1  #done").on("click", function(){
-  SETS + now.push(statdata);
-  $("#ststistic").html(+statdata);
+  statdata.push({
+  obecnaData: statdata.toLocaleString()})
+  $("#statistic").html(statdata);
   localStorage.setItem("statdata",JSON.stringify(statdata));
-  
+  console.log(statdata);
 });
+
+$("#stat  #statbut").on("click", function(){
+  $("#statistic").hasClass("show");
+});
+
+
+
+
+
+

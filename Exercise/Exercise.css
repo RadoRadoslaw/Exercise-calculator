@@ -241,7 +241,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-
+}
+#statistic{
+  display: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(136, 80, 209, 0.479);
+  transition: 0.2s;
+  height: 50%;
+  width: 100%;
+  border-radius: 4px;
+  
 }
 
 .active {
@@ -250,4 +260,5 @@ body {
 }
 .show {
   display: flex;
+  
 }
