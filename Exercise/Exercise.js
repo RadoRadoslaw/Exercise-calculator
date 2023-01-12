@@ -170,31 +170,30 @@ const data=[
 function generate(){
   // Pętla które przepierdziela Array obiektów o nazwie "data":
   data.forEach(function(element){
-    console.log(element)
-    $("#content").append(`
-      <div class="card">
+    const card=document.createElement("div"); // Tworzę wirtualny div
+	card.className="card"; // Nadaję mu klasę
+    $(card).html(`
         <h1 class="title">${element.title}</h1>
         <div class="description">${element.description}</div>
         <input type="text" id="addexercise">
         <button id="add">dodaj</button>
-      </div>
-    `);
+    `); // Wrzucam mu html ze zmiennymi z pętli
+	$(card).find("#add").on("click",function(){
+		// 
+		$("#kalku4").addClass("show");
+		
+		EXER.push($(card).find("#addexercise").val()); // Szukam w dive #addexercise i pobieran z niego value żeby wrzucić do tablicy EXER
+		$(".other").html(EXER);
+		$(".put").html(EXER);
+		
+		localStorage.setItem("name", JSON.stringify(EXER));
+		
+		this.parentNode.remove();
+	});// Nadaję przyciskowi #add w tym divie zdarzenie click
+	$("#content").append(card);
     
   });
   	// Dodanie akcji do wszystkich button'ów w elemencie #content akcji usuwania elementu "card", parentNode to rodzic elementu button
-
-    $("#content #add").on("click",function(){
-    
-      $("#kalku4").addClass("show");
-      EXER.push($("#addexercise").val());
-      $(".other").html(EXER);
-      $(".put").html(EXER);
-
-      localStorage.setItem("name", JSON.stringify(EXER));
-    
-      this.parentNode.remove();
-    });
-    
 }
 
 
