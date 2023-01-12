@@ -241,7 +241,7 @@ body {
   align-items: flex-end;
 }
 #statistic{
-  display: block;
+  display: none;
   background-color: rgba(136, 80, 209, 0.479);
   transition: 0.2s;
   height: 50%;

@@ -8,7 +8,7 @@ $(".dropdown-select").on("click",function(){
   }
 });
 
-$(".dropdown-list a").on("click",function(){
+$(".dropdown-list a ").on("click",function(){
   $(".dropdown-list").removeClass("active");
   $(".kalku").removeClass("show")
   let href=$(this).attr("data-href");
@@ -215,7 +215,9 @@ function stats(){
 	});
 	console.log(statdata);
 }
+
 stats();
+
 
 
 $("#kalku1  #done").on("click", function(){
@@ -230,5 +232,5 @@ $("#kalku1  #done").on("click", function(){
 });
 
 $("#stat  #statbut").on("click", function(){
-  $("#statistic").hasClass("show");
+  $("#statistic").toggleClass("show");
 });
