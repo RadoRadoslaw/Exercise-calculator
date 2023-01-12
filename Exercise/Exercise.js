@@ -199,28 +199,36 @@ function generate(){
 
 
 
+const loadStat=localStorage.getItem("statdata");
+let statdata=[];
+if(loadStat){
+	statdata = JSON.parse(loadStat);
+}
 
-const statdata = [
-  {
-    obecnaData:"11.01.2023"
-  }
-];
+function stats(){
+	$("#statistic").html("");
+	statdata.forEach(function(e){
+		$("#statistic").append(`
+		Data ćwiczenia: ${e.obecnaData} <br>
+		Ilość powtórzeń: ${e.number} <hr>
+		`)
+	});
+	console.log(statdata);
+}
+stats();
 
 
 $("#kalku1  #done").on("click", function(){
-  statdata.push({
-  obecnaData: statdata.toLocaleString()})
-  $("#statistic").html(statdata);
-  localStorage.setItem("statdata",JSON.stringify(statdata));
-  console.log(statdata);
+	const date=new Date();
+	statdata.push({
+		obecnaData: date.toLocaleString(),
+		number:$("#kalku1 .number").html() // Pobieram liczbę z pola
+	});
+	stats();
+	localStorage.setItem("statdata",JSON.stringify(statdata));
+	console.log(statdata);
 });
 
 $("#stat  #statbut").on("click", function(){
   $("#statistic").hasClass("show");
 });
-
-
-
-
-
-
