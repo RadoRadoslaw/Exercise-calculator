@@ -191,10 +191,36 @@ function generate(){
 		this.parentNode.remove();
 	});// Nadaję przyciskowi #add w tym divie zdarzenie click
 	$("#content").append(card);
-    
-  });
   	// Dodanie akcji do wszystkich button'ów w elemencie #content akcji usuwania elementu "card", parentNode to rodzic elementu button
+  });
+
 }
+////////////////////////KalkuGENERATOR/////////////////////////////////
+// function generate(){
+//   // Pętla które przepierdziela Array obiektów o nazwie "data":
+//   data.forEach(function(element){
+//     const card=document.createElement("div"); // Tworzę wirtualny div
+// 	card.className="card"; // Nadaję mu klasę
+//     $(card).html(`
+//         <h1 class="title">${element.title}</h1>
+//         <div class="description">${element.description}</div>
+//         <input type="text" id="addexercise">
+//         <button id="add">dodaj</button>
+//     `); // Wrzucam mu html ze zmiennymi z pętli
+// 	$(card).find("#kal1").on("click",function(){
+// 		// 
+// 		$("#kalku1").addClass("show");
+
+		
+// 		this.parentNode.remove();
+// 	});// Nadaję przyciskowi #add w tym divie zdarzenie click
+// 	$("#content").append(card);
+//   	// Dodanie akcji do wszystkich button'ów w elemencie #content akcji usuwania elementu "card", parentNode to rodzic elementu button
+//   });
+
+// }
+
+
 
 
 
@@ -233,3 +259,5 @@ $("#kalku1  #done").on("click", function(){
 $("#stat  #statbut").on("click", function(){
   $("#statistic").toggleClass("show");
 });
+
+// $("#ststistic").append("<li>............</li>");
