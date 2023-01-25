@@ -236,10 +236,20 @@ body {
 }
 
 #stat{
+ 
+  display: flex;
+  margin-bottom: 400%;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+/* #statbut{
+ 
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}
+} */
+ 
 #statistic{
   display: none;
   background-color: rgba(136, 80, 209, 0.479);
