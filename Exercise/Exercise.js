@@ -133,6 +133,7 @@ $("#kalku4  #done").on("click", function(){
   $("#sets4").html("Your sets: "+SETS4);
   localStorage.setItem("sets4",JSON.stringify(SETS4));
    integer = 0;
+   
 
 });
 
